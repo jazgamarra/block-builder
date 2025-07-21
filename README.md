@@ -1,1 +1,3 @@
-# block-builder
+# Heuristicas para Construccion de Bloques en Ethereum con Interacciones Semanticas 
+
+Este trabajo propone una alternativa que considera interacciones semánticas entre transacciones y restricciones operacionales para definir la utilidad de combinaciones de transacciones. A través de un modelo de utilidad que asigna bonificaciones y penalizaciones a pares y tríos de transacciones, se diseñan algoritmos capaces de construir bloques más valiosos que los obtenidos por métodos tradicionales. Se presentan dos variantes, una heurística base que identifica combinaciones útiles mediante búsqueda acotada, y una versión extendida con relleno greedy que busca incrementar la cobertura sin perder expresividad. Los resultados experimentales muestran que es posible superar al algoritmo greedy clásico en utilidad total del bloque y cobertura, manteniendo tiempos de ejecución compatibles con los intervalos de construcción de la red. 
