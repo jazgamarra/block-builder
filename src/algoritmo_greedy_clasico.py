@@ -16,7 +16,7 @@ def construir_bloque_greedy(df, T_simulado, gas_limit=30_000_000):
         tuple: Resumen de la construcción del bloque y DataFrame con las transacciones incluidas.
     """
 
-    inicio = time.time()
+    inicio = time.perf_counter()
     bloque = []
     gas_usado = 0
 
@@ -39,7 +39,7 @@ def construir_bloque_greedy(df, T_simulado, gas_limit=30_000_000):
             bloque.append(tx)
             gas_usado += tx["gas"]
 
-    fin = time.time()
+    fin = time.perf_counter()
 
     bloque_df = pd.DataFrame(bloque)
 
